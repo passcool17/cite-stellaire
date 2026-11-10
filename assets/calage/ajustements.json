@@ -1,0 +1,28 @@
+{
+  "_doc": "Ajustements de calage par zone, en pixels du fond 1920×1080 (voir scripts/calage.mjs). blocked = rectangles [x,y,l,h] retirés des polygones Créa (étals, jardins, canaux, HUD) ; extra = centres de cases ajoutés hors polygones (couloir vers une sortie) ; exit / spawn / objects = centres de cases (doivent tomber sur la grille alignée sur l'apparition).",
+  "quais": {
+    "zones": "zone1-zones.json", "tile": 160, "spawn": [820, 700],
+    "blocked": [[0, 640, 430, 440]],
+    "extra": [], "exit": [1620, 620],
+    "objects": { "quais1": [980, 620], "quais2": [1380, 580] }
+  },
+  "marche": {
+    "zones": "zone2-marche-zones.json", "tile": 160, "spawn": [950, 600],
+    "blocked": [[440, 680, 280, 290], [870, 770, 290, 240], [1140, 670, 280, 240], [1280, 510, 320, 240], [1080, 250, 260, 180]],
+    "extra": [[1350, 480], [1430, 440], [1510, 400]], "exit": [1590, 440],
+    "objects": { "dumuzi": [950, 440], "tuto": [1110, 600] }
+  },
+  "cour": {
+    "zones": "zone3-cour-zones.json", "tile": 160, "spawn": [900, 750],
+    "blocked": [[400, 380, 400, 180], [960, 380, 500, 250], [1180, 630, 300, 150]],
+    "extra": [[900, 430], [820, 390]], "exit": [900, 350],
+    "objects": { "pierre-eau": [820, 790], "pierre-etoile": [900, 830], "pierre-roseau": [1060, 910], "inscription": [1060, 670], "cour1": [820, 630] },
+    "painted": ["pierre-eau", "pierre-etoile", "pierre-roseau", "inscription"]
+  },
+  "sanctuaire": {
+    "zones": "zone4-sanctuaire-zones.json", "tile": 160, "spawn": [960, 620],
+    "blocked": [[820, 680, 300, 180]],
+    "extra": [], "exit": null,
+    "objects": { "lahama": [960, 460] }
+  }
+}

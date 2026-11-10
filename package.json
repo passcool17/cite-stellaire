@@ -1,0 +1,13 @@
+{
+  "name": "cite-stellaire",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test \"tests/*.test.js\"",
+    "build": "node scripts/build.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2",
+    "phaser": "3.90.0"
+  }
+}

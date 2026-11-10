@@ -1,0 +1,7 @@
+node_modules/
+dist/
+# Captures headless brutes (lourdes) : seules quelques captures WebP de présentation sont versionnées.
+verif/*.png
+verif/*-grille-G*
+*.log
+.env*

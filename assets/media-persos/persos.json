@@ -1,0 +1,287 @@
+{
+ "_ui": {
+  "cadre-minimap": {
+   "interior": [
+    44,
+    52,
+    304,
+    258
+   ],
+   "size": [
+    390,
+    355
+   ]
+  },
+  "cadre-objectif": {
+   "margins": {
+    "bottom": 90,
+    "left": 94,
+    "right": 94,
+    "top": 90
+   },
+   "scale": 0.5,
+   "size": [
+    427,
+    540
+   ]
+  }
+ },
+ "balum": {
+  "anims": {
+   "attack": [
+    16,
+    17
+   ],
+   "cast": [
+    20,
+    21
+   ],
+   "hit": [
+    24
+   ],
+   "idle_down": [
+    0,
+    1
+   ],
+   "idle_up": [
+    4,
+    5
+   ],
+   "walk_down": [
+    8,
+    9,
+    10,
+    11
+   ],
+   "walk_up": [
+    12,
+    13,
+    14,
+    15
+   ]
+  },
+  "cols": 4,
+  "frame": 128,
+  "origin": [
+   0.5,
+   0.9583333333333334
+  ],
+  "role": "hero",
+  "rows": 7,
+  "suspects": []
+ },
+ "dumuzi-abzu": {
+  "anims": {
+   "idle": [
+    0,
+    1
+   ]
+  },
+  "cols": 2,
+  "frame": 128,
+  "origin": [
+   0.5,
+   0.9583333333333334
+  ],
+  "role": "npc",
+  "rows": 1,
+  "suspects": []
+ },
+ "esprit-des-roseaux": {
+  "anims": {
+   "attack": [
+    2,
+    3
+   ],
+   "idle": [
+    0,
+    1
+   ]
+  },
+  "cols": 4,
+  "frame": 128,
+  "origin": [
+   0.5,
+   0.9583333333333334
+  ],
+  "role": "enemy",
+  "rows": 1,
+  "suspects": []
+ },
+ "gardien-de-seuil": {
+  "anims": {
+   "attack": [
+    2,
+    3
+   ],
+   "idle": [
+    0,
+    1
+   ]
+  },
+  "cols": 4,
+  "frame": 128,
+  "origin": [
+   0.5,
+   0.9583333333333334
+  ],
+  "role": "enemy",
+  "rows": 1,
+  "suspects": []
+ },
+ "lahama-fausse": {
+  "anims": {
+   "attack": [
+    2,
+    3
+   ],
+   "idle": [
+    0,
+    1
+   ],
+   "rage": [
+    4,
+    5
+   ]
+  },
+  "cols": 2,
+  "frame": 224,
+  "origin": [
+   0.5,
+   0.9791666666666666
+  ],
+  "role": "boss",
+  "rows": 3,
+  "suspects": []
+ },
+ "neru": {
+  "anims": {
+   "attack": [
+    16,
+    17
+   ],
+   "cast": [
+    20,
+    21
+   ],
+   "hit": [
+    24
+   ],
+   "idle_down": [
+    0,
+    1
+   ],
+   "idle_up": [
+    4,
+    5
+   ],
+   "walk_down": [
+    8,
+    9,
+    10,
+    11
+   ],
+   "walk_up": [
+    12,
+    13,
+    14,
+    15
+   ]
+  },
+  "cols": 4,
+  "frame": 128,
+  "origin": [
+   0.5,
+   0.9583333333333334
+  ],
+  "role": "hero",
+  "rows": 7,
+  "suspects": []
+ },
+ "pillard-des-digues": {
+  "anims": {
+   "attack": [
+    2,
+    3
+   ],
+   "idle": [
+    0,
+    1
+   ]
+  },
+  "cols": 4,
+  "frame": 128,
+  "origin": [
+   0.5,
+   0.9583333333333334
+  ],
+  "role": "enemy",
+  "rows": 1,
+  "suspects": []
+ },
+ "scorpion-des-briques": {
+  "anims": {
+   "attack": [
+    2,
+    3
+   ],
+   "idle": [
+    0,
+    1
+   ]
+  },
+  "cols": 4,
+  "frame": 128,
+  "origin": [
+   0.5,
+   0.9583333333333334
+  ],
+  "role": "enemy",
+  "rows": 1,
+  "suspects": []
+ },
+ "tishra": {
+  "anims": {
+   "attack": [
+    16,
+    17
+   ],
+   "cast": [
+    20,
+    21
+   ],
+   "hit": [
+    24
+   ],
+   "idle_down": [
+    0,
+    1
+   ],
+   "idle_up": [
+    4,
+    5
+   ],
+   "walk_down": [
+    8,
+    9,
+    10,
+    11
+   ],
+   "walk_up": [
+    12,
+    13,
+    14,
+    15
+   ]
+  },
+  "cols": 4,
+  "frame": 128,
+  "origin": [
+   0.5,
+   0.9583333333333334
+  ],
+  "role": "hero",
+  "rows": 7,
+  "suspects": []
+ }
+}

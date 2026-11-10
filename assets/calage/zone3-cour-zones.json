@@ -1,0 +1,67 @@
+{
+  "note": "Proposition a ajuster — polygones estimes a la main.",
+  "image": "zone3-cour.png",
+  "size": [
+    1920,
+    1080
+  ],
+  "walkable_polygons": [
+    {
+      "id": "cour",
+      "points": [
+        [
+          500,
+          450
+        ],
+        [
+          1300,
+          420
+        ],
+        [
+          1400,
+          850
+        ],
+        [
+          450,
+          880
+        ]
+      ]
+    },
+    {
+      "id": "devant-socles",
+      "points": [
+        [
+          600,
+          700
+        ],
+        [
+          1200,
+          680
+        ],
+        [
+          1250,
+          920
+        ],
+        [
+          550,
+          940
+        ]
+      ]
+    }
+  ],
+  "exit": {
+    "id": "sortie",
+    "rect": [
+      800,
+      80,
+      400,
+      280
+    ],
+    "note": "Grande porte nord vers ziggourat"
+  },
+  "spawn_suggested": [
+    900,
+    750
+  ],
+  "avant": "zone3-avant.png"
+}

@@ -1,0 +1,67 @@
+{
+  "note": "Proposition a ajuster — polygones estimes a la main.",
+  "image": "zone2-marche.png",
+  "size": [
+    1920,
+    1080
+  ],
+  "walkable_polygons": [
+    {
+      "id": "place-centrale",
+      "points": [
+        [
+          600,
+          400
+        ],
+        [
+          1300,
+          380
+        ],
+        [
+          1400,
+          750
+        ],
+        [
+          550,
+          780
+        ]
+      ]
+    },
+    {
+      "id": "allee-bas",
+      "points": [
+        [
+          500,
+          780
+        ],
+        [
+          1400,
+          760
+        ],
+        [
+          1450,
+          980
+        ],
+        [
+          450,
+          1000
+        ]
+      ]
+    }
+  ],
+  "exit": {
+    "id": "sortie",
+    "rect": [
+      1550,
+      350,
+      350,
+      400
+    ],
+    "note": "Arche / porte a droite"
+  },
+  "spawn_suggested": [
+    950,
+    600
+  ],
+  "avant": "zone2-avant.png"
+}

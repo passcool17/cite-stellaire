@@ -1,0 +1,46 @@
+{
+  "note": "Proposition a ajuster — polygones estimes a la main.",
+  "image": "zone4-sanctuaire.png",
+  "size": [
+    1920,
+    1080
+  ],
+  "walkable_polygons": [
+    {
+      "id": "arene",
+      "points": [
+        [
+          550,
+          350
+        ],
+        [
+          1350,
+          350
+        ],
+        [
+          1400,
+          850
+        ],
+        [
+          500,
+          850
+        ]
+      ]
+    }
+  ],
+  "exit": {
+    "id": "sortie",
+    "rect": [
+      800,
+      900,
+      320,
+      160
+    ],
+    "note": "Porte sud (bas) sortie"
+  },
+  "spawn_suggested": [
+    960,
+    700
+  ],
+  "avant": "zone4-avant.png"
+}

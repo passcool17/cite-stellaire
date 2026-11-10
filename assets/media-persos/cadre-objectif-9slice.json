@@ -1,0 +1,31 @@
+{
+  "image": "ui/cadre-objectif.png",
+  "margins": {
+    "left": 94,
+    "right": 94,
+    "top": 90,
+    "bottom": 90
+  },
+  "pieces_dir": "ui/cadre-objectif-9slice/",
+  "pieces": {
+    "tl": "tl.png",
+    "t": "t.png",
+    "tr": "tr.png",
+    "l": "l.png",
+    "c": "c.png",
+    "r": "r.png",
+    "bl": "bl.png",
+    "b": "b.png",
+    "br": "br.png"
+  },
+  "note": "Vrai 9-slice: coins fixes, cotes etirables/repetables, centre sombre opaque #12100e.",
+  "center": {
+    "rgba": [
+      18,
+      16,
+      14,
+      255
+    ],
+    "role": "dark_panel"
+  }
+}

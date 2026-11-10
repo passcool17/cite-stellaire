@@ -1,0 +1,693 @@
+{
+  "project": "Cite Stellaire - Chapitre 1",
+  "style_ref": "../concept-ecran-rpg.png",
+  "palette": "lapis-lazuli, ocre, or, turquoise",
+  "direction_default": "south-east (bas-droite)",
+  "notes": "Maquette de production originale. Pas de capture de jeu existant. Aucun asset de franchise.",
+  "assets": {
+    "tileset-eridu.png": {
+      "path": "tileset-eridu.png",
+      "size": [
+        512,
+        276
+      ],
+      "tile_base_diamond": [
+        128,
+        64
+      ],
+      "cell_height": 92,
+      "columns": 4,
+      "rows": 3,
+      "tile_count": 12,
+      "tiles": {
+        "sol-brique": {
+          "index": 0,
+          "col": 0,
+          "row": 0,
+          "x": 0,
+          "y_in_cell": 9,
+          "atlas_x": 0,
+          "atlas_y": 9,
+          "width": 128,
+          "height": 83,
+          "cell_height": 92,
+          "diamond_base": [
+            128,
+            64
+          ]
+        },
+        "sol-brique-use": {
+          "index": 1,
+          "col": 1,
+          "row": 0,
+          "x": 128,
+          "y_in_cell": 8,
+          "atlas_x": 128,
+          "atlas_y": 8,
+          "width": 128,
+          "height": 84,
+          "cell_height": 92,
+          "diamond_base": [
+            128,
+            64
+          ]
+        },
+        "canal-turquoise": {
+          "index": 2,
+          "col": 2,
+          "row": 0,
+          "x": 256,
+          "y_in_cell": 9,
+          "atlas_x": 256,
+          "atlas_y": 9,
+          "width": 128,
+          "height": 83,
+          "cell_height": 92,
+          "diamond_base": [
+            128,
+            64
+          ]
+        },
+        "bord-canal": {
+          "index": 3,
+          "col": 3,
+          "row": 0,
+          "x": 384,
+          "y_in_cell": 9,
+          "atlas_x": 384,
+          "atlas_y": 9,
+          "width": 128,
+          "height": 83,
+          "cell_height": 92,
+          "diamond_base": [
+            128,
+            64
+          ]
+        },
+        "digue": {
+          "index": 4,
+          "col": 0,
+          "row": 1,
+          "x": 0,
+          "y_in_cell": 6,
+          "atlas_x": 0,
+          "atlas_y": 98,
+          "width": 128,
+          "height": 86,
+          "cell_height": 92,
+          "diamond_base": [
+            128,
+            64
+          ]
+        },
+        "mur-temple": {
+          "index": 5,
+          "col": 1,
+          "row": 1,
+          "x": 128,
+          "y_in_cell": 5,
+          "atlas_x": 128,
+          "atlas_y": 97,
+          "width": 128,
+          "height": 87,
+          "cell_height": 92,
+          "diamond_base": [
+            128,
+            64
+          ]
+        },
+        "porte-temple": {
+          "index": 6,
+          "col": 2,
+          "row": 1,
+          "x": 256,
+          "y_in_cell": 5,
+          "atlas_x": 256,
+          "atlas_y": 97,
+          "width": 128,
+          "height": 87,
+          "cell_height": 92,
+          "diamond_base": [
+            128,
+            64
+          ]
+        },
+        "roseaux": {
+          "index": 7,
+          "col": 3,
+          "row": 1,
+          "x": 384,
+          "y_in_cell": 5,
+          "atlas_x": 384,
+          "atlas_y": 97,
+          "width": 128,
+          "height": 87,
+          "cell_height": 92,
+          "diamond_base": [
+            128,
+            64
+          ]
+        },
+        "palmier": {
+          "index": 8,
+          "col": 0,
+          "row": 2,
+          "x": 0,
+          "y_in_cell": 0,
+          "atlas_x": 0,
+          "atlas_y": 184,
+          "width": 128,
+          "height": 92,
+          "cell_height": 92,
+          "diamond_base": [
+            128,
+            64
+          ]
+        },
+        "escalier": {
+          "index": 9,
+          "col": 1,
+          "row": 2,
+          "x": 128,
+          "y_in_cell": 5,
+          "atlas_x": 128,
+          "atlas_y": 189,
+          "width": 128,
+          "height": 87,
+          "cell_height": 92,
+          "diamond_base": [
+            128,
+            64
+          ]
+        },
+        "dalle-stellaire": {
+          "index": 10,
+          "col": 2,
+          "row": 2,
+          "x": 256,
+          "y_in_cell": 4,
+          "atlas_x": 256,
+          "atlas_y": 188,
+          "width": 128,
+          "height": 88,
+          "cell_height": 92,
+          "diamond_base": [
+            128,
+            64
+          ]
+        },
+        "sable-ocre": {
+          "index": 11,
+          "col": 3,
+          "row": 2,
+          "x": 384,
+          "y_in_cell": 4,
+          "atlas_x": 384,
+          "atlas_y": 188,
+          "width": 128,
+          "height": 88,
+          "cell_height": 92,
+          "diamond_base": [
+            128,
+            64
+          ]
+        }
+      },
+      "indexing": "index = row*columns + col; cell at (col*128, row*cell_height); sprite bottom-aligned in cell",
+      "note": "Tuiles hautes (murs, porte, palmier, roseaux) ont height > 64; base losange 128x64"
+    },
+    "hero-tishra.png": {
+      "path": "hero-tishra.png",
+      "size": [
+        192,
+        192
+      ],
+      "frame_size": [
+        48,
+        48
+      ],
+      "direction": "south-east (bas-droite)",
+      "layout": "one row per animation, frames left-to-right",
+      "animations": {
+        "idle": {
+          "row": 0,
+          "frames": 2,
+          "frame_size": [
+            48,
+            48
+          ],
+          "columns_used": 2
+        },
+        "walk": {
+          "row": 1,
+          "frames": 4,
+          "frame_size": [
+            48,
+            48
+          ],
+          "columns_used": 4
+        },
+        "cast": {
+          "row": 2,
+          "frames": 2,
+          "frame_size": [
+            48,
+            48
+          ],
+          "columns_used": 2
+        },
+        "hit": {
+          "row": 3,
+          "frames": 1,
+          "frame_size": [
+            48,
+            48
+          ],
+          "columns_used": 1
+        }
+      },
+      "role": "gardienne des digues, tank, bouclier"
+    },
+    "hero-neru.png": {
+      "path": "hero-neru.png",
+      "size": [
+        192,
+        192
+      ],
+      "frame_size": [
+        48,
+        48
+      ],
+      "direction": "south-east (bas-droite)",
+      "layout": "one row per animation, frames left-to-right",
+      "animations": {
+        "idle": {
+          "row": 0,
+          "frames": 2,
+          "frame_size": [
+            48,
+            48
+          ],
+          "columns_used": 2
+        },
+        "walk": {
+          "row": 1,
+          "frames": 4,
+          "frame_size": [
+            48,
+            48
+          ],
+          "columns_used": 4
+        },
+        "cast": {
+          "row": 2,
+          "frames": 2,
+          "frame_size": [
+            48,
+            48
+          ],
+          "columns_used": 2
+        },
+        "hit": {
+          "row": 3,
+          "frames": 1,
+          "frame_size": [
+            48,
+            48
+          ],
+          "columns_used": 1
+        }
+      },
+      "role": "apprenti scribe-mage du temple d Enki, tablette et baton"
+    },
+    "hero-balum.png": {
+      "path": "hero-balum.png",
+      "size": [
+        192,
+        192
+      ],
+      "frame_size": [
+        48,
+        48
+      ],
+      "direction": "south-east (bas-droite)",
+      "layout": "one row per animation, frames left-to-right",
+      "animations": {
+        "idle": {
+          "row": 0,
+          "frames": 2,
+          "frame_size": [
+            48,
+            48
+          ],
+          "columns_used": 2
+        },
+        "walk": {
+          "row": 1,
+          "frames": 4,
+          "frame_size": [
+            48,
+            48
+          ],
+          "columns_used": 4
+        },
+        "cast": {
+          "row": 2,
+          "frames": 2,
+          "frame_size": [
+            48,
+            48
+          ],
+          "columns_used": 2
+        },
+        "hit": {
+          "row": 3,
+          "frames": 1,
+          "frame_size": [
+            48,
+            48
+          ],
+          "columns_used": 1
+        }
+      },
+      "role": "chasseur des marais, lance"
+    },
+    "boss-lahama.png": {
+      "path": "boss-lahama.png",
+      "size": [
+        192,
+        288
+      ],
+      "frame_size": [
+        96,
+        96
+      ],
+      "direction": "south-east (bas-droite)",
+      "layout": "one row per animation, frames left-to-right",
+      "animations": {
+        "idle": {
+          "row": 0,
+          "frames": 2,
+          "frame_size": [
+            96,
+            96
+          ],
+          "columns_used": 2
+        },
+        "attack": {
+          "row": 1,
+          "frames": 2,
+          "frame_size": [
+            96,
+            96
+          ],
+          "columns_used": 2
+        },
+        "rage": {
+          "row": 2,
+          "frames": 2,
+          "frame_size": [
+            96,
+            96
+          ],
+          "columns_used": 2
+        }
+      },
+      "role": "Lahama fausse, gardien des eaux, touche stellaire"
+    },
+    "enemy-pillard.png": {
+      "path": "enemy-pillard.png",
+      "size": [
+        96,
+        96
+      ],
+      "frame_size": [
+        48,
+        48
+      ],
+      "direction": "south-east (bas-droite)",
+      "layout": "row0 idle x2, row1 attack x2",
+      "animations": {
+        "idle": {
+          "row": 0,
+          "frames": 2,
+          "frame_size": [
+            48,
+            48
+          ]
+        },
+        "attack": {
+          "row": 1,
+          "frames": 2,
+          "frame_size": [
+            48,
+            48
+          ]
+        }
+      }
+    },
+    "enemy-esprit-roseaux.png": {
+      "path": "enemy-esprit-roseaux.png",
+      "size": [
+        96,
+        96
+      ],
+      "frame_size": [
+        48,
+        48
+      ],
+      "direction": "south-east (bas-droite)",
+      "layout": "row0 idle x2, row1 attack x2",
+      "animations": {
+        "idle": {
+          "row": 0,
+          "frames": 2,
+          "frame_size": [
+            48,
+            48
+          ]
+        },
+        "attack": {
+          "row": 1,
+          "frames": 2,
+          "frame_size": [
+            48,
+            48
+          ]
+        }
+      }
+    },
+    "enemy-scorpion-briques.png": {
+      "path": "enemy-scorpion-briques.png",
+      "size": [
+        96,
+        96
+      ],
+      "frame_size": [
+        48,
+        48
+      ],
+      "direction": "south-east (bas-droite)",
+      "layout": "row0 idle x2, row1 attack x2",
+      "animations": {
+        "idle": {
+          "row": 0,
+          "frames": 2,
+          "frame_size": [
+            48,
+            48
+          ]
+        },
+        "attack": {
+          "row": 1,
+          "frames": 2,
+          "frame_size": [
+            48,
+            48
+          ]
+        }
+      }
+    },
+    "enemy-gardien-seuil.png": {
+      "path": "enemy-gardien-seuil.png",
+      "size": [
+        96,
+        96
+      ],
+      "frame_size": [
+        48,
+        48
+      ],
+      "direction": "south-east (bas-droite)",
+      "layout": "row0 idle x2, row1 attack x2",
+      "animations": {
+        "idle": {
+          "row": 0,
+          "frames": 2,
+          "frame_size": [
+            48,
+            48
+          ]
+        },
+        "attack": {
+          "row": 1,
+          "frames": 2,
+          "frame_size": [
+            48,
+            48
+          ]
+        }
+      }
+    },
+    "portrait-tishra.png": {
+      "path": "portrait-tishra.png",
+      "size": [
+        96,
+        96
+      ],
+      "frame_size": [
+        96,
+        96
+      ],
+      "frames": 1
+    },
+    "portrait-neru.png": {
+      "path": "portrait-neru.png",
+      "size": [
+        96,
+        96
+      ],
+      "frame_size": [
+        96,
+        96
+      ],
+      "frames": 1
+    },
+    "portrait-balum.png": {
+      "path": "portrait-balum.png",
+      "size": [
+        96,
+        96
+      ],
+      "frame_size": [
+        96,
+        96
+      ],
+      "frames": 1
+    },
+    "ui-cadre-coin.png": {
+      "path": "ui-cadre-coin.png",
+      "size": [
+        64,
+        64
+      ],
+      "nine_slice": {
+        "note": "Coin supérieur-gauche orné; miroiter pour les 4 coins. Suggestion slice: border ~14px, center fill from inner blue panel.",
+        "suggested_margins": {
+          "left": 14,
+          "top": 14,
+          "right": 14,
+          "bottom": 14
+        },
+        "usage": "Utiliser comme coin; étirer/remplir les bords et le centre séparément."
+      }
+    },
+    "ui-minimap-joueur.png": {
+      "path": "ui-minimap-joueur.png",
+      "size": [
+        16,
+        16
+      ],
+      "note": "losange cyan = joueur"
+    },
+    "ui-minimap-ennemi.png": {
+      "path": "ui-minimap-ennemi.png",
+      "size": [
+        16,
+        16
+      ],
+      "note": "triangle rouge = ennemi"
+    },
+    "ui-minimap-sortie.png": {
+      "path": "ui-minimap-sortie.png",
+      "size": [
+        16,
+        16
+      ],
+      "note": "arche/porte = sortie"
+    },
+    "ui-minimap-coffre.png": {
+      "path": "ui-minimap-coffre.png",
+      "size": [
+        16,
+        16
+      ],
+      "note": "coffre or = coffre"
+    },
+    "icon-attaque.png": {
+      "path": "icon-attaque.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    "icon-competence.png": {
+      "path": "icon-competence.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    "icon-objet.png": {
+      "path": "icon-objet.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    "icon-defense.png": {
+      "path": "icon-defense.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    "fond-titre.png": {
+      "path": "fond-titre.png",
+      "size": [
+        1280,
+        720
+      ],
+      "opaque": true,
+      "note": "Fond titre sans texte; le jeu ajoute le titre"
+    },
+    "apercu.png": {
+      "path": "apercu.png",
+      "size": [
+        1600,
+        1600
+      ],
+      "note": "planche de verification complete"
+    },
+    "apercu-scene.png": {
+      "path": "apercu-scene.png",
+      "size": [
+        960,
+        640
+      ],
+      "note": "scene iso assemblee tileset+heros+ennemi"
+    }
+  },
+  "shared_palette": {
+    "colors": 64,
+    "source": "tileset+heros+boss",
+    "preview": "../pack-ch1-src/palette-shared.png"
+  },
+  "limitations": [
+    "Animations generees depuis planches IA: variations de pose faibles sur idle/walk pour certains heros; cast/hit plus distincts.",
+    "Tuiles hautes (mur/porte/palmier) ont une hauteur cellule uniforme (cell_height) mais le contenu source n etait que legerement plus haut que les sols.",
+    "Boss et heros: direction globale bas-droite; quelques frames peuvent legerement varier.",
+    "Pastilles minimap et icones: ordre issu de la planche source (joueur/ennemi/sortie/coffre et attaque/competence/objet/defense).",
+    "Pas de vrai pixel-perfect 16-bit: style pixel-art soigne HD reduit en nearest-neighbor."
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "note": "Proposition a ajuster — polygones estimes a la main depuis le rendu peint, pas un bake de collision. Les bords de canaux et marches sont ambigus.",
+  "image": "zone1-quais.png",
+  "size": [
+    1920,
+    1080
+  ],
+  "walkable_polygons": [
+    {
+      "id": "plaza-centrale",
+      "points": [
+        [
+          520,
+          520
+        ],
+        [
+          980,
+          480
+        ],
+        [
+          1180,
+          560
+        ],
+        [
+          1100,
+          780
+        ],
+        [
+          640,
+          820
+        ],
+        [
+          480,
+          700
+        ]
+      ]
+    },
+    {
+      "id": "quai-bas-gauche",
+      "points": [
+        [
+          80,
+          780
+        ],
+        [
+          420,
+          720
+        ],
+        [
+          500,
+          860
+        ],
+        [
+          120,
+          940
+        ]
+      ]
+    },
+    {
+      "id": "passerelle-droite",
+      "points": [
+        [
+          1180,
+          560
+        ],
+        [
+          1520,
+          500
+        ],
+        [
+          1680,
+          580
+        ],
+        [
+          1580,
+          720
+        ],
+        [
+          1200,
+          700
+        ]
+      ]
+    },
+    {
+      "id": "terrasse-basse-centre",
+      "points": [
+        [
+          700,
+          780
+        ],
+        [
+          1100,
+          760
+        ],
+        [
+          1180,
+          900
+        ],
+        [
+          640,
+          940
+        ]
+      ]
+    }
+  ],
+  "blocked_hints": [
+    {
+      "id": "canal-principal",
+      "note": "Eau turquoise — non marchable",
+      "approx_poly": [
+        [
+          200,
+          600
+        ],
+        [
+          700,
+          520
+        ],
+        [
+          900,
+          620
+        ],
+        [
+          400,
+          780
+        ]
+      ]
+    },
+    {
+      "id": "batiments-gauche",
+      "note": "Masses baties",
+      "approx_poly": [
+        [
+          0,
+          200
+        ],
+        [
+          480,
+          180
+        ],
+        [
+          520,
+          520
+        ],
+        [
+          60,
+          700
+        ]
+      ]
+    },
+    {
+      "id": "ziggurat-fond",
+      "note": "Structure haute non marchable sauf escaliers prevus plus tard",
+      "approx_poly": [
+        [
+          780,
+          80
+        ],
+        [
+          1200,
+          60
+        ],
+        [
+          1280,
+          420
+        ],
+        [
+          820,
+          450
+        ]
+      ]
+    }
+  ],
+  "exit": {
+    "id": "sortie-droite",
+    "type": "escalier-pont",
+    "rect": [
+      1520,
+      480,
+      380,
+      280
+    ],
+    "note": "Zone rectangulaire approximative couvrant le pont/escalier menant hors cadre a droite. A resserrer en jeu."
+  },
+  "spawn_suggested": [
+    820,
+    700
+  ],
+  "avant_layer": {
+    "delivered": true,
+    "file": "zone1-avant.png"
+  }
+}

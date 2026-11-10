@@ -1,0 +1,569 @@
+{
+  "pack": "cite-stellaire-ch1-peint",
+  "style": "painted-isometric-eridu",
+  "reference": [
+    "reference-pascal.png",
+    "zone1-quais.png"
+  ],
+  "notes": [
+    "Rendu peint. Scenes OK. Sprites regen mars fond gris + composantes/bandes (pas grille fixe).",
+    "display_scale: heros/ennemis 2.0, boss 1.75 sur scenes 1920 pour approcher reference-pascal.",
+    "Versions x2 dans sprites/x2/ depuis sources HR (pas upscale depuis 96).",
+    "Walk cycles: variations de pose parfois subtiles selon generation.",
+    "Arcade2: pillard f2 regen (plus d esprit); balum attaque 1 silhouette; verify multi-CC.",
+    "cadre-objectif: vrai 9-slice (pieces+JSON+test 3 tailles).",
+    "cadre-minimap: or 100% opaque; interieur TRANSPARENT (carte visible)."
+  ],
+  "scenes": {
+    "zone1": {
+      "path": "zone1-quais.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "zones": "zone1-zones.json",
+      "avant": "zone1-avant.png",
+      "role": "background"
+    },
+    "zone2": {
+      "path": "zone2-marche.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "zones": "zone2-marche-zones.json",
+      "avant": "zone2-avant.png",
+      "role": "background"
+    },
+    "zone3": {
+      "path": "zone3-cour.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "zones": "zone3-cour-zones.json",
+      "avant": "zone3-avant.png",
+      "role": "background"
+    },
+    "zone4": {
+      "path": "zone4-sanctuaire.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "zones": "zone4-sanctuaire-zones.json",
+      "avant": "zone4-avant.png",
+      "role": "background"
+    }
+  },
+  "sprites": {
+    "tishra": {
+      "path": "sprites/tishra.png",
+      "path_x2": "sprites/x2/tishra.png",
+      "size": [
+        384,
+        672
+      ],
+      "frame_size": [
+        96,
+        96
+      ],
+      "frame_size_x2": [
+        192,
+        192
+      ],
+      "anchor_feet": [
+        48,
+        92
+      ],
+      "anchor_feet_x2": [
+        96,
+        184
+      ],
+      "display_scale": 2.0,
+      "display_scale_note": "Multiplier vs frame_size 96/192 pour matcher reference-pascal sur scenes 1920",
+      "animations": {
+        "idle_down": {
+          "row": 0,
+          "frames": 2,
+          "direction": "down"
+        },
+        "idle_up": {
+          "row": 1,
+          "frames": 2,
+          "direction": "up"
+        },
+        "walk_down": {
+          "row": 2,
+          "frames": 4,
+          "direction": "down"
+        },
+        "walk_up": {
+          "row": 3,
+          "frames": 4,
+          "direction": "up"
+        },
+        "attack": {
+          "row": 4,
+          "frames": 2,
+          "direction": "any"
+        },
+        "cast": {
+          "row": 5,
+          "frames": 2,
+          "direction": "any"
+        },
+        "hit": {
+          "row": 6,
+          "frames": 1,
+          "direction": "any"
+        }
+      },
+      "role": "hero"
+    },
+    "neru": {
+      "path": "sprites/neru.png",
+      "path_x2": "sprites/x2/neru.png",
+      "size": [
+        384,
+        672
+      ],
+      "frame_size": [
+        96,
+        96
+      ],
+      "frame_size_x2": [
+        192,
+        192
+      ],
+      "anchor_feet": [
+        48,
+        92
+      ],
+      "anchor_feet_x2": [
+        96,
+        184
+      ],
+      "display_scale": 2.0,
+      "display_scale_note": "Multiplier vs frame_size 96/192 pour matcher reference-pascal sur scenes 1920",
+      "animations": {
+        "idle_down": {
+          "row": 0,
+          "frames": 2,
+          "direction": "down"
+        },
+        "idle_up": {
+          "row": 1,
+          "frames": 2,
+          "direction": "up"
+        },
+        "walk_down": {
+          "row": 2,
+          "frames": 4,
+          "direction": "down"
+        },
+        "walk_up": {
+          "row": 3,
+          "frames": 4,
+          "direction": "up"
+        },
+        "attack": {
+          "row": 4,
+          "frames": 2,
+          "direction": "any"
+        },
+        "cast": {
+          "row": 5,
+          "frames": 2,
+          "direction": "any"
+        },
+        "hit": {
+          "row": 6,
+          "frames": 1,
+          "direction": "any"
+        }
+      },
+      "role": "hero"
+    },
+    "balum": {
+      "path": "sprites/balum.png",
+      "path_x2": "sprites/x2/balum.png",
+      "size": [
+        384,
+        672
+      ],
+      "frame_size": [
+        96,
+        96
+      ],
+      "frame_size_x2": [
+        192,
+        192
+      ],
+      "anchor_feet": [
+        48,
+        92
+      ],
+      "anchor_feet_x2": [
+        96,
+        184
+      ],
+      "display_scale": 2.0,
+      "display_scale_note": "Multiplier vs frame_size 96/192 pour matcher reference-pascal sur scenes 1920",
+      "animations": {
+        "idle_down": {
+          "row": 0,
+          "frames": 2,
+          "direction": "down"
+        },
+        "idle_up": {
+          "row": 1,
+          "frames": 2,
+          "direction": "up"
+        },
+        "walk_down": {
+          "row": 2,
+          "frames": 4,
+          "direction": "down"
+        },
+        "walk_up": {
+          "row": 3,
+          "frames": 4,
+          "direction": "up"
+        },
+        "attack": {
+          "row": 4,
+          "frames": 2,
+          "direction": "any"
+        },
+        "cast": {
+          "row": 5,
+          "frames": 2,
+          "direction": "any"
+        },
+        "hit": {
+          "row": 6,
+          "frames": 1,
+          "direction": "any"
+        }
+      },
+      "role": "hero"
+    },
+    "dumuzi-abzu": {
+      "path": "sprites/dumuzi-abzu.png",
+      "path_x2": "sprites/x2/dumuzi-abzu.png",
+      "size": [
+        192,
+        96
+      ],
+      "frame_size": [
+        96,
+        96
+      ],
+      "frame_size_x2": [
+        192,
+        192
+      ],
+      "anchor_feet": [
+        48,
+        92
+      ],
+      "anchor_feet_x2": [
+        96,
+        184
+      ],
+      "display_scale": 2.0,
+      "display_scale_note": "Multiplier vs frame_size 96/192 pour matcher reference-pascal sur scenes 1920",
+      "animations": {
+        "idle": {
+          "row": 0,
+          "frames": 2,
+          "direction": "down"
+        }
+      },
+      "role": "npc"
+    },
+    "pillard-des-digues": {
+      "path": "sprites/pillard-des-digues.png",
+      "path_x2": "sprites/x2/pillard-des-digues.png",
+      "size": [
+        384,
+        96
+      ],
+      "frame_size": [
+        96,
+        96
+      ],
+      "frame_size_x2": [
+        192,
+        192
+      ],
+      "anchor_feet": [
+        48,
+        92
+      ],
+      "anchor_feet_x2": [
+        96,
+        184
+      ],
+      "display_scale": 2.0,
+      "display_scale_note": "Multiplier vs frame_size 96/192 pour matcher reference-pascal sur scenes 1920",
+      "animations": {
+        "idle": {
+          "row": 0,
+          "frames": 2,
+          "cols": [
+            0,
+            1
+          ]
+        },
+        "attack": {
+          "row": 0,
+          "frames": 2,
+          "cols": [
+            2,
+            3
+          ]
+        }
+      },
+      "role": "enemy"
+    },
+    "esprit-des-roseaux": {
+      "path": "sprites/esprit-des-roseaux.png",
+      "path_x2": "sprites/x2/esprit-des-roseaux.png",
+      "size": [
+        384,
+        96
+      ],
+      "frame_size": [
+        96,
+        96
+      ],
+      "frame_size_x2": [
+        192,
+        192
+      ],
+      "anchor_feet": [
+        48,
+        92
+      ],
+      "anchor_feet_x2": [
+        96,
+        184
+      ],
+      "display_scale": 2.0,
+      "display_scale_note": "Multiplier vs frame_size 96/192 pour matcher reference-pascal sur scenes 1920",
+      "animations": {
+        "idle": {
+          "row": 0,
+          "frames": 2,
+          "cols": [
+            0,
+            1
+          ]
+        },
+        "attack": {
+          "row": 0,
+          "frames": 2,
+          "cols": [
+            2,
+            3
+          ]
+        }
+      },
+      "role": "enemy"
+    },
+    "scorpion-des-briques": {
+      "path": "sprites/scorpion-des-briques.png",
+      "path_x2": "sprites/x2/scorpion-des-briques.png",
+      "size": [
+        384,
+        96
+      ],
+      "frame_size": [
+        96,
+        96
+      ],
+      "frame_size_x2": [
+        192,
+        192
+      ],
+      "anchor_feet": [
+        48,
+        92
+      ],
+      "anchor_feet_x2": [
+        96,
+        184
+      ],
+      "display_scale": 2.0,
+      "display_scale_note": "Multiplier vs frame_size 96/192 pour matcher reference-pascal sur scenes 1920",
+      "animations": {
+        "idle": {
+          "row": 0,
+          "frames": 2,
+          "cols": [
+            0,
+            1
+          ]
+        },
+        "attack": {
+          "row": 0,
+          "frames": 2,
+          "cols": [
+            2,
+            3
+          ]
+        }
+      },
+      "role": "enemy"
+    },
+    "gardien-de-seuil": {
+      "path": "sprites/gardien-de-seuil.png",
+      "path_x2": "sprites/x2/gardien-de-seuil.png",
+      "size": [
+        384,
+        96
+      ],
+      "frame_size": [
+        96,
+        96
+      ],
+      "frame_size_x2": [
+        192,
+        192
+      ],
+      "anchor_feet": [
+        48,
+        92
+      ],
+      "anchor_feet_x2": [
+        96,
+        184
+      ],
+      "display_scale": 2.0,
+      "display_scale_note": "Multiplier vs frame_size 96/192 pour matcher reference-pascal sur scenes 1920",
+      "animations": {
+        "idle": {
+          "row": 0,
+          "frames": 2,
+          "cols": [
+            0,
+            1
+          ]
+        },
+        "attack": {
+          "row": 0,
+          "frames": 2,
+          "cols": [
+            2,
+            3
+          ]
+        }
+      },
+      "role": "enemy"
+    },
+    "lahama-fausse": {
+      "path": "sprites/lahama-fausse.png",
+      "path_x2": "sprites/x2/lahama-fausse.png",
+      "size": [
+        384,
+        576
+      ],
+      "frame_size": [
+        192,
+        192
+      ],
+      "frame_size_x2": [
+        384,
+        384
+      ],
+      "anchor_feet": [
+        96,
+        188
+      ],
+      "anchor_feet_x2": [
+        192,
+        376
+      ],
+      "display_scale": 1.75,
+      "display_scale_note": "Multiplier vs frame_size 96/192 pour matcher reference-pascal sur scenes 1920",
+      "animations": {
+        "idle": {
+          "row": 0,
+          "frames": 2
+        },
+        "attack": {
+          "row": 1,
+          "frames": 2
+        },
+        "rage": {
+          "row": 2,
+          "frames": 2
+        }
+      },
+      "role": "boss"
+    }
+  },
+  "ui": {
+    "portrait-tishra": {
+      "path": "ui/portrait-tishra.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "portrait-neru": {
+      "path": "ui/portrait-neru.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "portrait-balum": {
+      "path": "ui/portrait-balum.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "cadre-objectif": {
+      "path": "ui/cadre-objectif.png",
+      "size": [
+        427,
+        540
+      ],
+      "nine_slice": {
+        "json": "ui/cadre-objectif-9slice.json",
+        "pieces_dir": "ui/cadre-objectif-9slice/",
+        "test": "ui/cadre-objectif-9slice-test.png",
+        "margins": {
+          "left": 94,
+          "right": 94,
+          "top": 90,
+          "bottom": 90
+        }
+      },
+      "center": "dark_opaque"
+    },
+    "cadre-minimap": {
+      "path": "ui/cadre-minimap.png",
+      "size": [
+        427,
+        360
+      ],
+      "interior": "transparent",
+      "border_gold": "opaque",
+      "notes": "ui/cadre-minimap-notes.json"
+    }
+  },
+  "previews": {
+    "apercu-scenes.png": "4 zones cote a cote",
+    "apercu-persos.png": "toutes les feuilles",
+    "apercu-scene-test.png": "zone1 + 3 heros + 1 ennemi + avant"
+  }
+}
